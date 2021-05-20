@@ -1,0 +1,1 @@
+Python Python provides inbuilt functions for creating, writing, and reading files. Two types of files can be handled in python, normal text files, and binary files (written in binary language,0s and 1s).
