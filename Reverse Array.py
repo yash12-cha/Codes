@@ -1,5 +1,5 @@
 N = int(input("Enter number of elements: "))
-Arr = list(map(int,input("\nEnter the elements: ").strip().split()))[:N]
+Arr = list(map(int,input("Enter the elements: ").strip().split()))[:N]
 start = 0
 end = N - 1
 while start < end:
