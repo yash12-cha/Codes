@@ -1,14 +1,18 @@
-N = int(input("Enter number of elements: "))
-Arr = list(map(int,input("Enter the elements: ").strip().split()))[:N]
-min = Arr[0]
-max = Arr[0]
-# Minimum Element
-for i in range(N):
-    if Arr[i] < min:
-        min = Arr[i]
-# Maximum Element
-for i in range(N):
-    if Arr[i] > max:
-        max = Arr[i]
-print("Minimum Element:",min)
-print("Maximum Element:",max)
+def getMinMax( a, n):
+    if n == 1:
+        max = a[0]
+        min = a[0]
+    else:
+        if a[0] > a[1]:
+            max = a[0]
+            min = a[1]
+        else:
+            max = a[1]
+            min = a[0]
+        for i in range(2,n):
+            if a[i] > max:
+                max = a[i]
+            if a[i] < min:
+                min = a[i]
+    
+    return max,min
