@@ -7,8 +7,8 @@ while i <= int(sqrt(x)):
     if x % i == 0:     # Check if i divides x without leaving a remainder
         if i * i ==x:  # Handle the case explained in the 4th (Refer Document)
                 result.append(i)
-            else:
-                result.append(i)
-                result.append(x//i)
+        else:
+            result.append(i)
+            result.append(x//i)
     i += 1
 print("Factors of the given number are: ",*result)
